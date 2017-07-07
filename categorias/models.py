@@ -1,5 +1,12 @@
 from django.db import models
 
+class CategoriasManager(models.Manager):
+	
+	def search(self,query):
+		return self.get_queryset().filter(
+		models.Q(name__icontains=query) | \
+		models.Q(slug__icontains=query))
+
 class Categorias(models.Model):
 	name = models.CharField('Nome', max_length=50)
 	slug = models.SlugField('Atalho')
@@ -12,5 +19,12 @@ class Categorias(models.Model):
 	created_at = models.DateTimeField('Criado em', auto_now_add = True) # Quando foi criado / auto_now_add , coloca a data atual do criamento
 	
 	updated_at = models.DateTimeField('Atualizado em', auto_now=True)# Atualizado em/ atualiza a data
-
+	objects = CategoriasManager()
 	
+	def __str__(self):
+		return self.name
+	class Meta:
+		verbose_name = 'Categoria'
+		verbose_name_plural = 'Categorias'
+		ordering = ['name']
+

@@ -4,6 +4,9 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.base, name='base'),
+	##
+	url(r'^categorias/', include('categorias.urls', namespace = 'categorias')),
+	##
     url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
     url(r'^post/$', views.post_list, name='post_list'), # HOME
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
