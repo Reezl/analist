@@ -6,7 +6,7 @@ body { padding-top: 70px; }
 }
 
 /*NAV*/
-body { 
+body {
     padding-top: 70px;
 
  }
@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1588f5;
+    background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,7 +23,7 @@ body {
 
 .navbar-fixed-top li {
     float: left;
-    border-right: 1px solid #4496e4;
+    border-right: 1px solid #fff;
 
 
 }
@@ -39,43 +39,14 @@ body {
 }
 
 .navbar-fixed-top li a:hover:not(.active) {
-    background-color: #111;
-
+    background-color: #1588f5;
 }
 /*Header*/
-.cabecalho{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    
-    background-color: #fff;
-    padding: 49px;
-    margin-top: -19px;
-    
-    
-}
 
-.cabecalho h1{
-    padding: 20px;
-    color: #000;
-    font-weight: 900;
-    font-family: Pacifico, serif;
-    font-size: 36pt;
-    
-    
-    
-}
-.cabecalho p{
-    margin-bottom: 2em;
-    color: #000;
-    font-weight: 900;
-    font-size: 14pt;
-    
 
-}
 
-.cabecalho .botao{
+header .botao{
+
     padding: 10px 30px;
     color: #fff;
     background-color: #1588f5;
@@ -83,9 +54,10 @@ body {
     text-decoration: none;
     border-radius: 3px;
 
+
 }
 
-.botao:hover{
+header .botao:hover{
     background-color: rgba(21, 136, 245,.4);
 
 }
@@ -94,7 +66,7 @@ body {
 /*Post*/
 
 .postagem{
-    background-color: #fdfdfd;
+    background-color: #ffffff;
     margin-top: 3px;
     padding: 10px 30px;
 
@@ -119,7 +91,7 @@ body {
     color: #000;
     text-align: justify;
     padding: 20px;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 .postagem .date{
@@ -142,9 +114,9 @@ body {
 
 /*SOBRE - imagens*/
 .sobre .imagens{
-    
+
     text-align: center;
-    
+
 }
 .sobre .imagens div{
     margin-top: 20px;
@@ -172,9 +144,19 @@ body {
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 600px){
-    .navbar-fixed-top li.right, 
+    .navbar-fixed-top li.right,
     .navbar-fixed-top li {float: none;}
- 
+
 
     .cabecalho{margin-top: 81px;}
+}
+
+.new-post form .save{
+    background-color: rgb(21, 136, 245);
+    font-family: Arial;
+    color: white;
+}
+
+.new-post form .save:hover{
+    background-color: rgb(105, 168, 228);
 }
