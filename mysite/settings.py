@@ -25,7 +25,7 @@ SECRET_KEY = 'peogs#&vyl#800isno^)f)+(s7zp%5st9le3i$-#bshng4ro!z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['analist.pythonanywhere.com']
+ALLOWED_HOSTS = [] # 'analist.pythonanywhere.com'
 
 
 # Application definition
@@ -87,7 +87,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
@@ -102,4 +102,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'media') # + media
+STATIC_ROOT = os.path.join(BASE_DIR, 'blog', 'media') # + media
+MEDIA_URL = '/media/'

@@ -1,3 +1,4 @@
+
 body,html {
   height: 100%;
   
@@ -93,73 +94,12 @@ footer{
   font-weight: 800;
 }
 
-body { padding-top: 70px; }
-.navbar-header a{
-    padding: 0px;
-    margin: 0px;
-    margin-left: 10px;
-}
-
-/*NAV*/
-body {
-    padding-top: 70px;
-
- }
-.navbar-fixed-top ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar-fixed-top li {
-    float: left;
-    border-right: 1px solid #fff;
 
 
-}
-
-.navbar-fixed-top li a {
-    display: block;
-    color: white;
-    font-size: 10pt;
-    text-align: center;
-    padding: 16px 13px;
-    text-decoration: none;
-
-}
-
-.navbar-fixed-top li a:hover:not(.active) {
-    background-color: #1588f5;
-}
-/*Header*/
-
-
-
-header .botao{
-
-    padding: 10px 30px;
-    color: #fff;
-    background-color: #1588f5;
-    font-size: .9em;
-    text-decoration: none;
-    border-radius: 3px;
-
-
-}
-
-header .botao:hover{
-    background-color: rgba(21, 136, 245,.4);
-
-}
 
 
 /*Post*/
-
+/*
 .postagem{
     background-color: #ffffff;
     margin-top: 3px;
@@ -193,49 +133,10 @@ header .botao:hover{
     color: #1874cc;
     text-align: right;
 }
-
+*/
 /*Sobre*/
 
-.sobre{
-    background-color: #fdfdfd;
-    margin-top: 3px;
-    padding: 10px 30px;
-}
 
-.sobre h1{
-    font-size: 18pt;
-    border-bottom: 1px solid #e2e0e0;
-}
-
-/*SOBRE - imagens*/
-.sobre .imagens{
-
-    text-align: center;
-
-}
-.sobre .imagens div{
-    margin-top: 20px;
-    text-align: center;
-    display: inline-block;
-    padding: 20px;
-}
-
-/*rodape*/
-
-.rodape{
-    background-color: #11296f;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.rodape .redes a,p {
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-
-}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 600px){
@@ -256,3 +157,41 @@ header .botao:hover{
     background-color: rgb(105, 168, 228);
 }
 
+/*CATEGORIAS*/
+
+.description_categoria{
+  
+  width: 66%;
+  float: right;
+  margin-top: 6%;
+  padding: 10px 60px 20px;
+}
+.img_categoria {
+	background-color: #fff;
+	margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    width: 34%;
+    
+	
+}
+
+.text_categoria {
+  text-align: right;
+  margin-top: -30px;
+  
+
+
+
+}
+
+
+.name_categoria{
+  text-align: center;
+
+
+}
+
+.name_categoria h3{
+  font-weight: 900;
+}
